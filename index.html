@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UNITY</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="funciones.js" async="true"></script>
+</head>
+<body>
+	<header>
+		<i class="fas fa-bars" onclick="menu()"></i>
+	</header>
+	<nav id="menu">
+		<ul>
+			<a href="../index.html"><li><i class="fas fa-home"></i>Introducción</li></a>
+			<a href="#que"><li><i class="fas fa-question"></i>¿Qué hacer?</li></a>
+			<a href="#pasos"><li><i class="fas fa-walking"></i>Pasos</li></a>
+			<a href="#recursos"><li><i class="fas fa-paperclip"></i>Recursos</li></a>
+			<a href="#gebi"><li><i class="fab fa-js-square"></i></li></a>
+		</ul>
+	</nav>
+	<div class="contenedor">
+		<h1>Practica final</h1>
+		<p class="historia">De camino a Puerto Vallarta te has quedado sin gasolina, y si, justo en medio de la nada...<br>Pero no te preocupes, a lo lejos se alcanza a ver una gasolinería, solo tendrás que atravesar el camino oscuro, llenar tu garrafa y volver a tu carro. Sencillo, no?</p>
+		<!-- <p class="historia">TroTown es un pueblo muy lejano, o tal vez no tanto, donde el sol brilla todo el día pero las noches son muy frías, los niños corren y los ancianos leen el periódico, es un lugar donde la paz y la felicidad se puede percibir...  <br>Pero no! nunca vayas, un día 14 <br>El día 14 de cada mes no salgas, no rías, no corras, es más no respires... <br>En este pueblo existen creaturas malvadas capaces de deborarte en un segundo, son rápidas, vuelan, corren y además saben nadar!<br>¡no tienes escape!</p>
+		<p class="historia">Deberás recolectar la mayor cantidad de <b>corazones</b> que puedas mientras estás en tu habitación, una vez que atravieses el portal hacia TroTown ya no habrá vuelta atrás</p>
+		<p class="historia">Atravesarás TroTown y... no sé qué te podrá pasar</p> -->
+		
+		<hr>
+
+		<h2 id="que">¿Qué haremos?</h2>
+		<p>Construiremos un escenario nuevo, esta vez será de noche y casi no alcanzaremos a ver nada, estamos perdidos, y lo único que se alcanza a ver (a lo lejos) es una gasolinería. <br>Agrega todo lo que se te ocurra en el camino.</p>
+		<!-- <p>Contruiremos un escenario nuevo, basado en un pueblo, podrás diseñarlo y decorarlo como tu prefieras. Además usaremos el proyecto de la habitación que desarrollamos en las primeras sesiones.</p>
+		<p>Compartiré los recursos empleados en el proyecto, sin embargo puedes usar los que tu prefieras</p> -->
+		
+		<hr>
+
+		<h2 id="pasos">Pasos</h2>
+
+		<div class="paso">
+			<h3>Crear Proyecto</h3>
+			<div class="num">1</div>
+			<div class="inst">
+				<p>Comenzaremos agregando una nueva versión de unity para poder utilizar la opción de contruir para web</p>
+				
+				<p>En la sección de <b><i>installs</i></b> de tu Unity Hub, seleccionarás la opción del boton <b><i>add</i></b> que te permitirá agregar una nueva versión de unity</p>
+
+				<p class="historia tp">Nota: <br>No es necesario que pongas la versión de unity más reciente, puedes usar la que te guste o te acomode más <br>Si en tus versiones ya tienes una con la opción de construir para web, puedes usar esa y no agregar una nueva.</p>
+				<video src="u1.mp4" controls="true"></video>
+			</div>
+		</div>
+
+		<div class="paso gris">
+			<h3>Crear Escenario</h3>
+			<div class="num">2</div>
+			<div class="inst">
+				<p>En esta parte se muestra como se va construyendo el escenario, agregando assets como los árboles, las montañas de fondo, la estación de gasolina, el carro del personaje, entre otras cosas.</p><br>
+				<p>Para que quede algo así...</p>
+				<video src="u3.mp4" controls="true"></video>
+				<p class="historia tp">Nota:<br>A partir del minuto 9 se ve cómo utilizo el asset del skybox, que por cierto nunca había usado, así que se ve cómo estuve intentando hasta que me gustó. como quedó</p>
+				<video src="u2.mp4" controls="true"></video>
+			</div>
+		</div>
+		<div class="paso">
+			<h3>Agregar Sonido Ambiental</h3>
+			<div class="num">3</div>
+			<div class="inst">
+				<p>Agregaremos sonido ambiental al juego, para esto darás clic derecho en el menú de jerarquía, y seleccionarás la opción de <i>Create Empty</i>, cambiamos el nombre del gameObject, en mi caso le puse "Sonido" y en el menú del inspector le añadimos un componente nuevo <i>Audio Source</i>, aquí arrastramos el sonido que previamente agregamos a nuestra carpeta del proyecto en la opción de <i>Audio Clip</i> y listo, podrás modificar cosas como el volumen, o si quieres que se esté repitiendo constantemente.</p>
+				<video src="u4.mp4" controls="true"></video>
+			</div>
+		</div>
+
+		<hr>
+		
+		<h2 id="recursos">Recursos</h2>
+			<u>Assets</u>
+				<ul>
+					<li><a href="https://assetstore.unity.com/packages/3d/environments/landscapes/polydesert-107196">Desierto</a></li>
+					<li><a href="https://assetstore.unity.com/packages/3d/environments/urban/cartoon-buildings-161395">Edificios</a></li>
+					<li><a href="https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-107400">Skybox</a></li>
+					<li><a href="https://assetstore.unity.com/packages/3d/environments/snowed-fence-6722#content">Reja</a></li>
+					<li><a href="https://assetstore.unity.com/packages/3d/vehicles/cartoon-car-vehicle-pack-180962">Carro</a></li>
+				</ul>
+			<u>Materiales</u>
+				<ul>
+					<li><a href="https://assetstore.unity.com/packages/2d/textures-materials/floors/pbr-ground-free-158595">Suelo</a></li>
+				</ul>
+			<u>Descargables</u>
+				<ul>
+					<li><a href="">Sonido Ambiental</a></li>
+				</ul>
+	</div>
+</body>
+</html>
