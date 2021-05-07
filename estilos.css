@@ -107,6 +107,7 @@ h3{
 }
 p{
 	color: var(--negro);
+	margin-top: 10px;
 }
 .historia{
 	font-family: 'Gloria Hallelujah', cursive;
@@ -168,7 +169,8 @@ u{
 		padding: 0px 20px;
 		box-sizing: border-box;
 	}
-	.inst>video{
+	.inst video{
+		margin-top: 10px;
 		width: 600px;
 	}
 
