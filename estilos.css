@@ -169,7 +169,7 @@ u{
 		padding: 0px 20px;
 		box-sizing: border-box;
 	}
-	.inst video{
+	.inst video, .inst img{
 		margin-top: 10px;
 		width: 600px;
 	}
